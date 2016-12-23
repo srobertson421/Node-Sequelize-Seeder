@@ -6,9 +6,10 @@ Node has a plethora of other uses than just web servers. One major use of Node i
 
 * Fork and clone this repo
 * ```cd``` into folder and run ```npm init```
-* run ```npm install --save pg pg-hstore sequelize```
-* run ``` sequelize init```
+* Run ```npm install --save pg pg-hstore sequelize```
+* Run ``` sequelize init```
 * Next create your model according to the data you find in the CSV files ```sequelize model:create --name person --attributes firstName:string,lastName:string,email:string,gender:string,ip_address:string```
+* Run ```sequelize db:migrate```
 * Write code in the "db_seeder.js" file
 * Run code via Node with ```node db_seeder.js```
 * Use "MOCK_DATA_SMALL.csv" for initial testing as it only has 10 entries, "MOCK_DATA.csv" has 1000.
